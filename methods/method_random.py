@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2023/6/26 12:13
 # @Author   : lv yuqian
-# @File     : my_random.py
+# @File     : method_random.py
 # @Desc     : None
 import os
 import time
@@ -32,7 +32,7 @@ class Random(BaseGraph):
         """
         core = nx.k_core(graph, k, core_number)
         candidate_edges = [(u, v) for u, v in core.edges if min(core_number[u], core_number[v]) == k]
-        print(f"当前节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
+        print(f"当前目标节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
         # print(f"攻击前的CS值为: {self.update_core_strength(core, target_nodes, core_number)}")
 
         removed_edges = []

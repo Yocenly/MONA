@@ -74,7 +74,7 @@ class Optimal(BaseGraph):
             # 数据预处理, 获取目标k核及候选连边列表
             core = nx.k_core(graph, k, core_number)
             candidate_edges = [(u, v) for u, v in core.edges if min(core_number[u], core_number[v]) == k]
-            print(f"当前的节点集合为: {nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
+            print(f"当前目标节点集合为: {nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
             # print(f"攻击前的CS值为: {self.update_core_strength(core, nodes, core_number)}")
 
             # 使用穷举法筛选能够使得所有目标节点核数发生改变的最优删边组合

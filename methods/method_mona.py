@@ -103,7 +103,7 @@ class MONA(BaseGraph):
         root_edges = list(nx.Graph([list(core.edges(u))[0] for u in target_nodes if len(core.edges(u)) > 0]).edges)
         candidate_edges = list(tree.edges) + root_edges
         core.add_edges_from(list(tree.edges))
-        print(f"当前节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
+        print(f"当前目标节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
         # print(f"攻击前的CS值为: {self.update_core_strength(core, target_nodes, core_number)}")
         print(f"攻击前的MO值为: {dict([(n, shale[n]) for n in target_nodes])}")
 

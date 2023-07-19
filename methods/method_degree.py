@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2023/6/26 13:56
 # @Author   : lv yuqian
-# @File     : degree.py
-# @Desc     : None
-# -*- coding: utf-8 -*-
-# @Time     : 2023/6/26 12:13
-# @Author   : lv yuqian
-# @File     : my_random.py
+# @File     : method_degree.py
 # @Desc     : None
 import os
 import time
@@ -38,7 +33,7 @@ class Degree(BaseGraph):
         # 提取目标k核子图, 计算核数为k的节点的MO值, 构建Backtrack Tree
         core = nx.k_core(graph, k, core_number)
         candidate_edges = [(u, v) for u, v in core.edges if min(core_number[u], core_number[v]) == k]
-        print(f"当前节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
+        print(f"当前目标节点集合为: {target_nodes}; 节点核数为: {k}; 候选连边数量为: {len(candidate_edges)}")
 
         removed_edges = []
         for removed_edge in candidate_edges:
