@@ -95,7 +95,7 @@ class MONA(BaseGraph):
         """
         # 提取目标k核子图, 计算核数为k的节点的MO值, 构建Backtrack Tree
         core = nx.k_core(graph, k, core_number)
-        shale = self.decompose_shale(core, k, core_number)
+        shale = self.modified_onion_decomposition(core, k, core_number)
         tree = self.node_backtrack(target_nodes, core, shale, core_number)
         # 单纯使用BT-tree中的连边在某些情况中是有欠缺的, 需要给每个目标节点额外补充一条连边加入候选连边
         # 额外选择的连边需要满足: 1. 改连边连接目标节点及另一个核数不小于目标节点的节点; 2. 该连边不存在于BT-tree中

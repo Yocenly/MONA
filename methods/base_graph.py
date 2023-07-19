@@ -43,7 +43,7 @@ class BaseGraph:
         return nx.onion_layers(g)
 
     @classmethod
-    def decompose_shale(cls, g: nx.Graph, k: int, c: dict) -> dict:
+    def modified_onion_decomposition(cls, g: nx.Graph, k: int, c: dict) -> dict:
         """
         Modified-Onion分解, 获取每个节点在目标k核中所属的层级
         值得注意的是, MO算法与O算法的不同之处在于, O算法在每次循环中都会删除不符合条件的节点

@@ -1,15 +1,18 @@
-# Project for MONA
+# MONA: An Efficient and Scalable Strategy for Targeted k-Nodes Collapse
 
-We provide this project for the support of our paper "_MONA: An Efficient and Scalable Strategy 
-for Targeted $k$-Nodes Collapse_".
+## 1. Overview
 
-In this project, we mainly offer the source code of our proposed methods, including **Optimal**, **MOD**,
-**BacktrackTree**, **PruneEdge** and most important **MONA**. Besides, we also provide the realization of 
-used baselines, such as **Random**, **Degree**.
+We offer the introductions of files or folders in this part.
 
-We could implement our attack methods by the following command.
+- _caches_: Results of k-core decomposition for each dataset on the considering of avoiding duplicate computations.
+- _datasets_: Used datasets in our paper.
+- _methods_: Proposed methods and used baselines, including **Optimal**, **MONA**, **Random**, **Degree**, **COREATTACK**, **KC-Edge**.
+- _interface_attack_: The interface to implement our methods.
+
+To implement attack methods, we could run the following command.
 
 > python interface_attack.py --dataset [dataset_name] --method [method_name] --b [b]
 
-where [dataset_name] represents the used dataset; [method_name] represents the used attack method 
-(optimal/mona/random/degree).
+- [dataset_name]: Tested dataset, e.g., usair/deezereu/crawl.
+- [method_name]: Tested method, e.g., optimal/mona/random.
+- [b]: The number of target nodes, e.g., 2/4/6.
