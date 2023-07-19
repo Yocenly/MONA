@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-We offer the introductions of files or folders in this part.
+We offer the descriptions of files or folders in this part.
 
 - _caches_: Results of k-core decomposition for each dataset on the considering of avoiding duplicate computations.
 - _datasets_: Used [datasets](https://drive.google.com/file/d/1wm37pjW418kZTL_E-2ecG_3StcFxCUZB/view?usp=drive_link) in
