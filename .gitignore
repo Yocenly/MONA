@@ -1,8 +1,8 @@
 .idea
-#datasets/
-visualization
-#caches/
+caches
+datasets
 evaluation
+visualization
 
 
 methods/tnc.py
