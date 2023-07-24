@@ -4,11 +4,11 @@
 
 We offer the descriptions of files or folders in this part.
 
-- _caches_: Results of k-core decomposition for each dataset on the considering of avoiding duplicate computations.
+- _caches_: Results of k-core decomposition for each dataset for avoiding duplicate computations.
 - _datasets_: Used [datasets](https://drive.google.com/file/d/1wm37pjW418kZTL_E-2ecG_3StcFxCUZB/view?usp=drive_link) in
   our paper.
-- _methods_: Proposed methods and used baselines, including **Optimal**, **MONA**, **Random**, **Degree**, **COREATTACK
-  **, **KC-Edge**.
+- _methods_: Proposed methods and used baselines, including **Optimal**, **MONA**, **Random**, **Degree**,
+**COREATTACK**, **KC-Edge**.
 - _interface_attack_: The interface to implement our methods.
 
 ## 2. Requirements
